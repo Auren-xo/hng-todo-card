@@ -72,3 +72,102 @@ button {
   background: #e74c3c;
   color: white;
 }
+
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-form h3 {
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.edit-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #444;
+  gap: 5px;
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.edit-form textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus,
+.edit-form select:focus {
+  outline: 2px solid #4a6cf7;
+  border-color: #4a6cf7;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#saveBtn {
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background: #eee;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.desc {
+  max-height: 20px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.desc.expanded {
+  max-height: 500px;
+}
+
+
+.priority-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.low {
+  background: green;
+}
+
+.dot.medium {
+  background: orange;
+}
+
+.dot.high {
+  background: red;
+}
